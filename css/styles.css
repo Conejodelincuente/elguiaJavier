@@ -1,0 +1,17 @@
+*{
+    font-family: "Noto Sans", sans-serif !important;
+}
+
+/*Header*/
+
+.nav-logo{
+    height: 3rem;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1rem;
+    align-items: baseline;
+}
+a.nav-link.active{
+font-weight: 600;
+}
