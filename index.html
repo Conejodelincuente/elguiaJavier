@@ -11,6 +11,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./img/fav_icon.ico" type="image/.ico" />
@@ -28,9 +32,12 @@
     <header>
       <!-- Seccion Navbar -->
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
         <div class="container-fluid">
-          <a class="navbar-brand mx-3" href="index.html">
+          <a
+            class="navbar-brand mx-3 d-flex align-self-center"
+            href="index.html"
+          >
             <img
               class="nav-logo"
               src="./img/elguia_logo.png"
@@ -50,7 +57,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto text-end">
               <li class="nav-item mx-2">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Tours</a
@@ -68,22 +75,108 @@
       </nav>
 
       <!-- Seccion hero header -->
-       <div class="hero-header d-flex align-items-center flex-column flex-sm-row m-3 p-1 gap-5 ">
-        <article class="hero-txt d-flex  flex-column  justify-content-start order-2 order-sm-1">
-        <h2 class="fw-bold">Hola soy Javi!</h2>
-        <p>
-          Soy Javi, guía local con más de 15 años de experiencia recorriendo cada rincón de Barcelona. Te invito a descubrir la verdadera esencia de mi ciudad adoptiva a través de rutas auténticas y personalizadas.
-        </p>
-        <button class="btn btn-outline-secondary btn-sm" >Conoce mis Tours</button>
-      </article>
-      <div class="hero-img order-1 order-sm-2">
-
+      <div
+        class="hero-header d-flex align-items-center flex-column flex-sm-row m-3 p-1 gap-5"
+      >
+        <article
+          class="hero-txt d-flex flex-column justify-content-start order-2 order-sm-1"
+        >
+          <h2 class="fw-bold">Hola soy Javi!</h2>
+          <p>
+            Soy Javi, guía local con más de 15 años de experiencia recorriendo
+            cada rincón de Barcelona. Te invito a descubrir la verdadera esencia
+            de mi ciudad adoptiva a través de rutas auténticas y personalizadas.
+          </p>
+          <button class="btn btn-outline-secondary btn-sm d-inline-flex p-2">
+            Conoce mis Tours
+          </button>
+        </article>
+        <div class="hero-img order-1 order-sm-2"></div>
       </div>
-       </div>
-      
     </header>
 
-    <h1>Hola Mundo</h1>
+    <!-- Seccion Texto main -->
+
+    <section class="m-3 p-4 d-flex justify-content-center text-bg-light">
+      <div class="w-75 text-center">
+        <h1 class="home_h1 fs-1">Tours y experiencias en Barcelona</h1>
+        <p class="d-sm-block mt-4 fs-6 line-height: 2">
+          La arquitectura vanguardista de Gaudí, sus playas urbanas y sus tapas
+          nocturnas hacen que Barcelona sea fácil de amar. Piérdete en el Barrio
+          Gótico, recorre los mercados y luego sube a una colina para contemplar
+          la puesta de sol: la energía de una gran ciudad con el ritmo relajado
+          del Mediterráneo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seccion actividades -->
+    <section class="main-actividades p-3 m-3 py-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Las mejores actividades</h2>
+        <a
+          class="text-decoration-none text-body fst-italic fs-4"
+          href="index.html"
+          >Ver todos</a
+        >
+      </div>
+
+      <!--contenedor de las tarjetas -->
+      <div class="d-flex flex-row gap-2 justify-content-center">
+        <!-- Tarjeta 1 -->
+        <a href="tour1.html" class="text-decoration-none text-dark">
+          <div
+            class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column"
+          >
+            <img
+              src="./img/tour1.JPG"
+              class="card-img-top rounded-top"
+              alt="actividad 1"
+            />
+
+            <div class="card-body d-flex flex-column p-3 flex-grow-1">
+              <h5 class="card-title fw-bold">Tour 1</h5>
+              <p class="card-text mb-auto">
+                Sus grandes hojas verdes y perforadas transforman la luz en
+                calma visual, llenando el ambiente de frescura y equilibrio.
+              </p>
+              <div
+                class="d-flex flex-row justify-content-between align-items-end pt-3"
+              >
+                <span><i class="bi bi-clock-fill"></i> 2,5 hs</span>
+                <span><i class="bi bi-star-fill text-warning"></i> 4.5</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Tarjeta 2 -->
+        <a href="tour1.html" class="text-decoration-none text-dark">
+          <div
+            class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column"
+          >
+            <img
+              src="./img/tour2.JPG"
+              class="card-img-top rounded-top"
+              alt="actividad 1"
+            />
+
+            <div class="card-body d-flex flex-column p-3 flex-grow-1">
+              <h5 class="card-title fw-bold">Tour 2</h5>
+              <p class="card-text mb-auto">
+                Sus grandes hojas verdes y perforadas transforman la luz en
+                calma visual, llenando el ambiente de frescura y equilibrio.
+              </p>
+              <div
+                class="d-flex flex-row justify-content-between align-items-end pt-3"
+              >
+                <span><i class="bi bi-clock-fill"></i> 1,5 hs</span>
+                <span><i class="bi bi-star-fill text-warning"></i> 4.2</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

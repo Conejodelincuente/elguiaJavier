@@ -21,8 +21,8 @@ $font-family: "Noto Sans", sans-serif !important;
 }
 
 .hero-header {
-  height: 95vh;
-  .hero-txt{
+  height: 80vh;
+  .hero-txt {
     width: 55vw;
   }
   .hero-img {
@@ -32,10 +32,35 @@ $font-family: "Noto Sans", sans-serif !important;
     width: 100%;
     height: 100%;
   }
-  .btn{
-    max-width: 15rem;
+  .btn {
     font-weight: 600;
     color: $color_primario;
     border-color: $color_primario;
+  }
+}
+
+/*Main*/
+
+.main-actividades {
+  background-color: #f5d4b8;
+  .tarjeta {
+    background-color: #ffffff;
+    width: 20rem;
+    height: 30rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    .card-img-top {
+      transition: transform 0.3s ease;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      height: 15rem;
+     
+    }
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
   }
 }

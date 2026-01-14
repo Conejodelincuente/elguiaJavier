@@ -15,7 +15,7 @@
 }
 
 .hero-header {
-  height: 95vh;
+  height: 80vh;
 }
 .hero-header .hero-txt {
   width: 55vw;
@@ -28,10 +28,33 @@
   height: 100%;
 }
 .hero-header .btn {
-  max-width: 15rem;
   font-weight: 600;
   color: #ff7c0a;
   border-color: #ff7c0a;
+}
+
+/*Main*/
+.main-actividades {
+  background-color: #f5d4b8;
+}
+.main-actividades .tarjeta {
+  background-color: #ffffff;
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.main-actividades .tarjeta .card-img-top {
+  transition: transform 0.3s ease;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 15rem;
+}
+.main-actividades .tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=styles.css.map */
