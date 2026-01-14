@@ -34,9 +34,6 @@ a:hover {
 .hero-header {
   height: 80vh;
 }
-.hero-header .hero-txt {
-  width: 55vw;
-}
 .hero-header .hero-img {
   background-image: url(../img/javi_explorador.JPG);
   background-repeat: no-repeat;
@@ -56,7 +53,11 @@ a:hover {
 
 /* Main Actividades */
 .main-actividades {
-  background-color: #ece2d9;
+  background-color: #faecdf;
+}
+.main-actividades .container-actividades {
+  max-width: 75vw;
+  margin: 0 auto;
 }
 .main-actividades .tarjeta {
   background-color: #ffffff;

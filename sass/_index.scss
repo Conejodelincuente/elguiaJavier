@@ -15,9 +15,6 @@
 /* Hero Section */
 .hero-header {
   height: 80vh;
-  .hero-txt {
-    width: 55vw;
-  }
   .hero-img {
     background-image: url(../img/javi_explorador.JPG);
     background-repeat: no-repeat;
@@ -38,9 +35,13 @@
 
 /* Main Actividades */
 .main-actividades {
-  background-color: $color-fondo-1;
+  background-color: $color-bg-1;
+  .container-actividades{
+    max-width: 75vw;
+    margin: 0 auto;
+  }
   .tarjeta {
-    background-color: $color-secondario;
+    background-color: $color-bg-blanco;
     width: 20rem;
     height: 30rem;
     display: flex;
