@@ -1,0 +1,44 @@
+
+// VARIABLES GLOBALES
+
+// Colores principales
+
+$color-primario: #ff7c0a;
+$color-secondario: #ffffff;
+$color-fondo-1:#ece2d9;
+$color-dark: #212529;
+$color-text: #333333;
+
+
+// Fuentes
+
+$font-family: "Noto Sans", sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family !important;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $color-primario;
+  }
+}
+
+
+// 
+
+
+

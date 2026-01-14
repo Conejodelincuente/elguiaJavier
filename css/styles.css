@@ -1,9 +1,25 @@
-/*Primitivos*/
 * {
-  font-family: "Noto Sans", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Header*/
+body {
+  font-family: "Noto Sans", sans-serif !important;
+  color: #333333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ff7c0a;
+}
+
+/* Header & Navbar */
 .navbar .nav-logo {
   height: 3rem;
 }
@@ -14,6 +30,7 @@
   color: #ff7c0a;
 }
 
+/* Hero Section */
 .hero-header {
   height: 80vh;
 }
@@ -32,15 +49,21 @@
   color: #ff7c0a;
   border-color: #ff7c0a;
 }
+.hero-header .btn:hover {
+  background-color: #ff7c0a;
+  color: white;
+}
 
-/*Main*/
+/* Main Actividades */
 .main-actividades {
-  background-color: #f5d4b8;
+  background-color: #ece2d9;
 }
 .main-actividades .tarjeta {
   background-color: #ffffff;
   width: 20rem;
   height: 30rem;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -55,6 +78,9 @@
 .main-actividades .tarjeta:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.main-actividades .tarjeta:hover .card-img-top {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=styles.css.map */

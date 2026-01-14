@@ -1,66 +1,11 @@
-/*Primitivos*/
-$color_primario: #ff7c0a;
-$font-family: "Noto Sans", sans-serif !important;
+//  variables
+@import '_bases';
 
-* {
-  font-family: $font-family;
-}
 
-/*Header*/
 
-.navbar {
-  .nav-logo {
-    height: 3rem;
-  }
-  .navbar-brand {
-    font-weight: 600;
-    font-size: 1rem;
-    align-items: baseline;
-    color: #ff7c0a;
-  }
-}
+//  Páginas 
 
-.hero-header {
-  height: 80vh;
-  .hero-txt {
-    width: 55vw;
-  }
-  .hero-img {
-    background-image: url(../img/javi_explorador.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
-  .btn {
-    font-weight: 600;
-    color: $color_primario;
-    border-color: $color_primario;
-  }
-}
+@import '_index';
+@import '_tours';
 
-/*Main*/
 
-.main-actividades {
-  background-color: #f5d4b8;
-  .tarjeta {
-    background-color: #ffffff;
-    width: 20rem;
-    height: 30rem;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    .card-img-top {
-      transition: transform 0.3s ease;
-      width: 100%;
-      object-fit: cover;
-      object-position: top;
-      height: 15rem;
-     
-    }
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-  }
-}

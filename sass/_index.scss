@@ -1,0 +1,68 @@
+
+/* Header & Navbar */
+.navbar {
+  .nav-logo {
+    height: 3rem;
+  }
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1rem;
+    align-items: baseline;
+    color: $color-primario;
+  }
+}
+
+/* Hero Section */
+.hero-header {
+  height: 80vh;
+  .hero-txt {
+    width: 55vw;
+  }
+  .hero-img {
+    background-image: url(../img/javi_explorador.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .btn {
+    font-weight: 600;
+    color: $color-primario;
+    border-color: $color-primario;
+    &:hover {
+        background-color: $color-primario;
+        color: white;
+    }
+  }
+}
+
+/* Main Actividades */
+.main-actividades {
+  background-color: $color-fondo-1;
+  .tarjeta {
+    background-color: $color-secondario;
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+    .card-img-top {
+      transition: transform 0.3s ease;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      height: 15rem;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      .card-img-top {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
