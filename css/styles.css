@@ -145,6 +145,7 @@ a:hover {
 .testimonios .testimonio-card {
   border: 1px solid #eeecec;
   transition: transform 0.3s ease-in;
+  max-width: 50rem;
 }
 .testimonios .testimonio-card:hover {
   transform: translateY(-4px);
@@ -154,6 +155,41 @@ a:hover {
   height: 3rem;
   background-color: #ff7c0a;
   font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #111827;
+}
+.footer .text-secondary {
+  color: #9ca3af;
+}
+.footer .titulo-footer {
+  color: #ff7c0a;
+}
+.footer .border-secondary {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.footer .btn {
+  height: 2.2rem;
+  max-width: 15rem;
+  min-width: 8rem;
+  font-weight: 600;
+  color: #ff7c0a;
+  border-color: #ff7c0a;
+}
+.footer .btn:hover {
+  background-color: #ff7c0a;
+  color: white;
+}
+.footer .footer-top .form-check {
+  color: transparent;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.footer .footer-top .footer-social {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

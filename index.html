@@ -332,9 +332,14 @@
 
     <!-- Seccion Testrimonios -->
 
-    <section class="testimonios p-3 bg-light">
+    <section class="testimonios p-3 py-5 bg-light">
       <div class="container">
-        <h2 class="fw-bold mb-4">Reseñas de mis viajeros</h2>
+        <div class="d-flex align-items-center mb-4 ">
+          <h2 class="fw-bold mb-4 flex-grow-1">Reseñas de mis viajeros</h2>
+          <div class="text-end mt-4">
+          <a href="#" class="text-dark fw-bold">Ver más reseñas</a>
+          </div>
+        </div>
       </div>
       <div class="row g-4">
         <!-- Testimonio 1 -->
@@ -351,7 +356,9 @@
               </div>
               <div>
                 <h6 class="mb-0 fw-bold">Leandro Fuentes - Mexico</h6>
-                <small class="text-muted">17 noviembre 2025 - Tour gótico</small>
+                <small class="text-muted"
+                  >17 noviembre 2025 - Tour gótico</small
+                >
               </div>
             </div>
             <!-- Reseña 1 -->
@@ -363,7 +370,7 @@
           </article>
         </div>
         <!-- Testimonio 2 -->
-        <div class=" col-md-6">
+        <div class="col-md-6">
           <article
             class="testimonio-card p-4 bg-white rounded-4 shadow-sm h-100"
           >
@@ -376,7 +383,9 @@
               </div>
               <div>
                 <h6 class="mb-0 fw-bold">Sophi Loudry - England</h6>
-                <small class="text-muted">10 Junio 2025 - Paseo en velero</small>
+                <small class="text-muted"
+                  >10 Junio 2025 - Paseo en velero</small
+                >
               </div>
             </div>
             <!-- Reseña 2 -->
@@ -387,13 +396,93 @@
             </p>
           </article>
         </div>
-        <div class="text-end mt-4">
-          <a href="#" class="text-dark fw-bold"
-            >Ver más reseñas</a
-          >
-        </div>
       </div>
     </section>
+
+    <footer class="footer text-white pt-5 pb-4">
+      <div class="container">
+        <!-- footer top -->
+        <div class="footer-top">
+          <div class="row align-items-start g-5">
+            <div class="col-12 col-lg-5">
+              <h4 class="fw-bold fs-4 mb-2">
+                ¡Consigue mi gui Secreta para recorrer barcelona como un local!
+              </h4>
+              <p class="text-secondary mb-0">
+                Suscríbete para recibir mis mejores tips y te enviaré gratis mi
+                <strong>Guía Completa en PDF</strong> con recomendaciones que no
+                salen en los mapas.
+              </p>
+              <div class="pt-5 d-flex flex-column gap-2 align-items-start">
+                <form
+                  class="d-flex flex-column flex-sm-row gap-2 align-items-center">
+                  <div class="">
+                    <input
+                      type="email"
+                      class="form-control border-secondary text-dark"
+                      placeholder="Tu email..."
+                      aria-label="Email"/>
+                  </div>
+                  <button class="btn btn-sm">Enviar PDF</button>
+                </form>
+                <div class="d-flex flex-row gap-2">
+                  <input
+                    class="form-check"
+                    type="checkbox"
+                    id="privacyCheck"
+                    required/>
+                  <label class="text-secondary small" for="privacyCheck">
+                    Acepto la
+                    <a href="privacidad.html"
+                      class="text-white text-decoration-underline">política de privacidad</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- footer Links -->
+
+            <div class="col-lg-5 offset-lg-2">
+              <div class="text-start text-lg-end">
+                <h6 class="fw-bold fs-5 mb-4  text-uppercase small">Explora</h6>
+                <ul class="list-unstyled ">
+                  <li class="mb-2">
+                    <a href="tours.html" class="footer-link">Nuestros Tours</a></li>
+                  <li class="mb-2">
+                    <a href="contacto.html" class="footer-link">Contacto Directo</a></li>
+                  <li class="mb-2">
+                    <a href="#" class="footer-link">Sobre Javi</a></li>
+                </ul>
+                <!-- footer redes Sociales -->
+
+                <div class="text-start text-lg-end pt-4">
+                  <h6 class="fw-bold fs-5 mb-3 text-uppercase small">
+                    Sígueme en redes</h6>
+                  <div class="d-flex gap-2 align-items-center justify-content-lg-end">
+                    <a href="#" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram fs-3"></i></a>
+                    <a href="#" class="footer-social" aria-label="YouTube"><i class="bi bi-youtube fs-2"></i></a>
+                    <a href="#" class="footer-social" aria-label="TikTok"><i class="bi bi-tiktok fs-3"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <!-- Parte inferior -->
+
+        <div class="footer-bottom p-4 mt-2 border-top border-secondary d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+        >
+          <p class="small text-secondary mb-0">
+            © 2026 elGuiaJavier. Todos los derechos reservados.
+          </p>
+          <div class="d-flex gap-4">
+            <a href="#" class="footer-link small">Privacidad</a>
+            <a href="#" class="footer-link small">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

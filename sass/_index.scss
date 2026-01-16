@@ -1,4 +1,3 @@
-
 /* Header & Navbar */
 .navbar {
   .nav-logo {
@@ -22,7 +21,7 @@
   @media (max-width: 767px) {
     height: auto;
   }
-  
+
   .hero-img {
     background-image: url(../img/javi_explorador.JPG);
     background-repeat: no-repeat;
@@ -31,17 +30,17 @@
     width: 100%;
 
     @media (min-width: 768px) {
-    height: 100%;
-    min-height: 70vh;
-  }
+      height: 100%;
+      min-height: 70vh;
+    }
     @media (max-width: 767px) {
-    height: 55vh;
+      height: 55vh;
+    }
   }
-  }
-  .hero-img-col{
+  .hero-img-col {
     height: 100%;
   }
-  .hero-txt{
+  .hero-txt {
     @media (max-width: 767px) {
       text-align: start;
       padding: 2rem 1.5rem;
@@ -53,8 +52,8 @@
     color: $color-primario;
     border-color: $color-primario;
     &:hover {
-        background-color: $color-primario;
-        color: white;
+      background-color: $color-primario;
+      color: white;
     }
   }
 }
@@ -79,8 +78,8 @@
       object-position: top;
       height: 8rem;
     }
-    .card-text{
-      font-size: .8rem;
+    .card-text {
+      font-size: 0.8rem;
     }
 
     &:hover {
@@ -95,11 +94,11 @@
 
 /* guias de barcelona */
 
-.guias{
+.guias {
   a {
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+
     &:hover {
       cursor: pointer;
       .guia-destacada img,
@@ -108,8 +107,8 @@
       }
     }
   }
-  .guia-destacada{
-    img{
+  .guia-destacada {
+    img {
       width: 100%;
       height: 25rem;
       object-fit: cover;
@@ -117,8 +116,8 @@
       border-radius: 1rem;
     }
   }
-  .guia-item{
-    img{
+  .guia-item {
+    img {
       width: 7rem;
       height: 5.5rem;
       object-fit: cover;
@@ -131,20 +130,60 @@
 
 /* Testimonios */
 
-.testimonios{
-  .testimonio-card{
-    border:1px solid #eeecec;
+.testimonios {
+  .testimonio-card {
+    border: 1px solid #eeecec;
     transition: transform 0.3s ease-in;
-  
+    max-width: 50rem;
+
     &:hover {
       transform: translateY(-4px);
     }
   }
-  .avatar{
-    width:3rem;
+  .avatar {
+    width: 3rem;
     height: 3rem;
     background-color: $color-primario;
     font-size: 1.5rem;
   }
-
 }
+
+/* Footer */
+
+.footer {
+  background-color: #111827;
+  .text-secondary {
+    color: #9ca3af;
+  }
+  .titulo-footer{
+    color: $color-primario;
+  }
+  .border-secondary {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  .btn{
+    height: 2.2rem;
+    max-width: 15rem;
+    min-width: 8rem;
+    font-weight: 600;
+    color: $color-primario;
+    border-color: $color-primario;
+    &:hover {
+      background-color: $color-primario;
+      color: white;
+    }
+  }
+  .footer-top{
+    .form-check{
+    color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);;
+  }
+  .footer-social{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  }
+  
+}
+
