@@ -64,8 +64,8 @@
   background-color: $color-bg-1;
   .tarjeta {
     background-color: $color-bg-blanco;
-    max-width: 18rem;
-    height: 30rem;
+    max-width: 12rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -77,10 +77,10 @@
       width: 100%;
       object-fit: cover;
       object-position: top;
-      height: 10rem;
+      height: 8rem;
     }
     .card-text{
-      font-size: .9rem;
+      font-size: .8rem;
     }
 
     &:hover {
@@ -127,4 +127,24 @@
       flex-shrink: 0;
     }
   }
+}
+
+/* Testimonios */
+
+.testimonios{
+  .testimonio-card{
+    border:1px solid #eeecec;
+    transition: transform 0.3s ease-in;
+  
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  .avatar{
+    width:3rem;
+    height: 3rem;
+    background-color: $color-primario;
+    font-size: 1.5rem;
+  }
+
 }

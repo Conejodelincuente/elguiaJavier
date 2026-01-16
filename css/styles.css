@@ -83,12 +83,12 @@ a:hover {
 
 /* Main Actividades */
 .main-actividades {
-  background-color: #faecdf;
+  background-color: #d1d1d1;
 }
 .main-actividades .tarjeta {
   background-color: #ffffff;
-  max-width: 18rem;
-  height: 30rem;
+  max-width: 12rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -100,10 +100,10 @@ a:hover {
   width: 100%;
   object-fit: cover;
   object-position: top;
-  height: 10rem;
+  height: 8rem;
 }
 .main-actividades .tarjeta .card-text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .main-actividades .tarjeta:hover {
   transform: translateY(-5px);
@@ -139,6 +139,21 @@ a:hover {
   object-position: top;
   border-radius: 0.8rem;
   flex-shrink: 0;
+}
+
+/* Testimonios */
+.testimonios .testimonio-card {
+  border: 1px solid #eeecec;
+  transition: transform 0.3s ease-in;
+}
+.testimonios .testimonio-card:hover {
+  transform: translateY(-4px);
+}
+.testimonios .avatar {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff7c0a;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
