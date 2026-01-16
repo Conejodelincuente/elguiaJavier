@@ -56,7 +56,9 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-end">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="index.html">Tours</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Tours</a
+                >
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="plantas.html">Sobre mi</a>
@@ -70,22 +72,24 @@
       </nav>
 
       <!-- Seccion hero header -->
-      <div class="hero-header py-4">
-        <div class="container h-100">
-          <div class="row h-100 align-items-end">
-            <article class="col-lg-5">
+
+      <div class="hero-header p-0">
+        <div class="container">
+          <div class="row align-items-end">
+            <article class="hero-txt col-lg-5 col-md-6 p-5 order-2 order-md-1">
               <h2 class="fw-bold">Hola soy Javi!</h2>
               <p class="mt-3">
                 Soy Javi, guía local con más de 15 años de experiencia
-                recorriendo cada rincón de Barcelona. Te invito a descubrir la verdadera esencia de mi ciudad adoptiva a través de rutas
+                recorriendo cada rincón de Barcelona. Te invito a descubrir la
+                verdadera esencia de mi ciudad adoptiva a través de rutas
                 auténticas y personalizadas.
               </p>
               <button class="btn mt-3 btn-outline-secondary d-inline p-2">
                 Conoce mis Tours
               </button>
             </article>
-            <div class="col-lg-7 h-100">
-              <div class="hero-img h-100"></div>
+            <div class="hero-img-col col-lg-7 col-md-6 order-1 order-md-2">
+              <div class="hero-img"></div>
             </div>
           </div>
         </div>
@@ -112,9 +116,11 @@
     </section>
 
     <!-- Seccion actividades -->
-    <section class="main-actividades p-3 m-3 py-4">
-      <div class="container-actividades">
-        <div class="d-flex justify-content-between align-items-center mb-3">
+    <section class="main-actividades py-3">
+      <div class="container-fluid px-3">
+        <div
+          class="d-flex justify-content-between align-items-center px-5 mb-3"
+        >
           <h2>Las mejores actividades</h2>
           <a
             class="text-decoration-none text-body fst-italic fs-6"
@@ -124,7 +130,10 @@
         </div>
 
         <!--contenedor tarjetas -->
-        <div class="d-flex flex-row flex-wrap gap-2 justify-content-center">
+
+        <div
+          class="d-flex flex-row flex-wrap gap-2 justify-content-center w-100"
+        >
           <!-- Tarjeta 1 -->
           <a href="tour1.html" class="text-decoration-none text-dark">
             <div
@@ -234,34 +243,89 @@
     </section>
 
     <!-- Seccion guias -->
-    <section class="guias-seccion p-3 m-3 py-4">
-      <div class="guias-container row bg-dark"></div>
-    </section>
-
-    <div>
-      <div class="card mb-3" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="..." />
+    <section class="guias py-4">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold">Guias escenciales en Barcelona</h2>
+          <a class="btn btn-outline-primary rounded-pill" href="#">
+            ver todas</a
+          >
+        </div>
+        <div class="row g-4">
+          <!-- Columna izquierda -->
+          <div class="col-lg-7">
+            <a href="#" class="text-decoration-none text-dark">
+              <article class="guia-destacada">
+                <img src="./img/paraguas.JPG" alt="foto destacada" />
+                <div class="mt-3">
+                  <h3 class="fw-bold">El clima puede ser engañoso</h3>
+                  <p class="text-muted mt-3">
+                    Como en cualquier otro lugar, visitar la hermosa ciudad de
+                    Barcelona consiste en probar cosas nuevas...
+                  </p>
+                  <small class="text-muted mt-3"> 15 Dic. 2025 </small>
+                </div>
+              </article>
+            </a>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
+
+          <!-- Columna derecha -->
+          <div class="col-lg-5">
+            <div class="d-flex flex-column gap-3">
+              <!-- Item 1 -->
+              <a href="#" class="text-decoration-none text-dark">
+                <article class="guia-item d-flex gap-2">
+                  <img src="./img/sagrada.JPG" alt="Foto sagrada familia" />
+                  <div>
+                    <h6 class="fw-bold">
+                      9 curiosidades sobre la Sagrada Familia
+                    </h6>
+                    <p class="text-muted small mb-1">
+                      La Sagrada Familia es uno de los monumentos más
+                      visitados...
+                    </p>
+                    <small class="text-muted fst-italic"> 15 Junio 2024 </small>
+                  </div>
+                </article>
+              </a>
+              <!-- Item 2 -->
+              <a href="#" class="text-decoration-none text-dark">
+                <article class="guia-item d-flex gap-2">
+                  <img src="./img/tapas.JPG" alt="Foto de tapas" />
+                  <div>
+                    <h6 class="fw-bold">El mundo de las tapas</h6>
+                    <p class="text-muted small mb-1">
+                      ¿Sabes distinguir las patatas bravas de las croquetas?
+                      esta guía de tapas de Barcelona...
+                    </p>
+                    <small class="text-muted fst-italic"> 18 Marzo 2025 </small>
+                  </div>
+                </article>
+              </a>
+              <!-- Item 3 -->
+              <a href="#" class="text-decoration-none text-dark">
+                <article class="guia-item d-flex gap-2">
+                  <img src="./img/santpau.JPG" alt="Foto de tapas" />
+                  <div>
+                    <h6 class="fw-bold">
+                      Formas festivas de pasar la Navidad en Barcelona
+                    </h6>
+                    <p class="text-muted small mb-1">
+                      Vive la magia de Barcelona en Navidad, con sus mercados
+                      navideños, sus desfiles especiales y la misa de medianoche
+                      en la emblemática Sagrada Familia.
+                    </p>
+                    <small class="text-muted fst-italic">
+                      27 noviembre 2025
+                    </small>
+                  </div>
+                </article>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
