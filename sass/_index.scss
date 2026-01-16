@@ -131,10 +131,12 @@
 /* Testimonios */
 
 .testimonios {
+  width: 100vw;
   .testimonio-card {
     border: 1px solid #eeecec;
     transition: transform 0.3s ease-in;
-    max-width: 50rem;
+    max-width: 30rem;
+
 
     &:hover {
       transform: translateY(-4px);
@@ -145,6 +147,7 @@
     height: 3rem;
     background-color: $color-primario;
     font-size: 1.5rem;
+    flex-shrink: 0;
   }
 }
 
