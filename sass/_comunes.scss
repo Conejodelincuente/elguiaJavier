@@ -1,0 +1,51 @@
+/*Navbar */
+.navbar {
+  .nav-logo {
+    height: 3rem;
+  }
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1rem;
+    align-items: baseline;
+    color: $color-primario;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #111827;
+  .text-secondary {
+    color: #9ca3af;
+  }
+  .titulo-footer{
+    color: $color-primario;
+  }
+  .border-secondary {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  .btn{
+    height: 2.2rem;
+    max-width: 15rem;
+    min-width: 8rem;
+    font-weight: 600;
+    color: $color-primario;
+    border-color: $color-primario;
+    &:hover {
+      background-color: $color-primario;
+      color: white;
+    }
+  }
+  .footer-top{
+    .form-check{
+    color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);;
+  }
+  .footer-social{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  }
+  
+}
