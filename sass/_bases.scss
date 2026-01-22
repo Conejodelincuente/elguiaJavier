@@ -5,7 +5,8 @@
 
 $color-primario: #ff7c0a;
 $color-bg-blanco: #ffffff;
-$color-bg-1:#d1d1d1;
+$color-bg-1:#e4e4e4;
+$color-bg-2:#f5ecddd1;
 $color-dark: #212529;
 $color-text: #333333;
 
@@ -31,14 +32,14 @@ a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
-  
+
   &:hover {
     color: $color-primario;
   }
 }
 
 
-// 
+//
 
 
 
