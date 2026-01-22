@@ -55,6 +55,25 @@ a:hover {
   background-color: #ff7c0a;
   color: white;
 }
+.footer .footer-top h4 {
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .footer .footer-top h4 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+.footer .footer-top p {
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .footer .footer-top p {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+}
 .footer .footer-top .form-check {
   color: transparent;
   border-color: rgba(255, 255, 255, 0.3);
@@ -272,6 +291,47 @@ a:hover {
   }
 }
 
+/*--Video--*/
+.section-video {
+  padding: 4rem 0;
+  background-color: #e4e4e4;
+}
+.section-video h2 {
+  font-size: 2.25rem;
+}
+@media (max-width: 768px) {
+  .section-video h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+.section-video p {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .section-video p {
+    text-align: center;
+  }
+}
+.section-video .video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.section-video .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/*--Galleria de fotos--*/
 .section-galeria {
   padding: 1rem;
   padding-top: 2rem;
@@ -318,6 +378,46 @@ a:hover {
   height: 13rem;
   object-fit: cover;
   display: block;
+}
+
+/*--Video--*/
+.section-video {
+  padding: 4rem 0;
+  background-color: #e4e4e4;
+}
+.section-video h2 {
+  font-size: 2.25rem;
+}
+@media (max-width: 768px) {
+  .section-video h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+.section-video p {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .section-video p {
+    text-align: center;
+  }
+}
+.section-video .video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.section-video .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=styles.css.map */

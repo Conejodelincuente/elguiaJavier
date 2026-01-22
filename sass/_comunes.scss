@@ -37,6 +37,23 @@
     }
   }
   .footer-top{
+    h4{
+      font-size: 1.4rem;
+
+        @media (max-width: 768px){
+        font-size: 1.4rem;
+        text-align: center;
+        }
+    }
+    p{
+      font-size: .9rem;
+
+        @media (max-width: 768px){
+        font-size: .9rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        }
+    }
     .form-check{
     color: transparent;
     border-color: rgba(255, 255, 255, 0.3);;
@@ -47,5 +64,5 @@
     border-radius: 50%;
   }
   }
-  
+
 }
