@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -31,16 +31,13 @@
     <header>
       <!-- Seccion Navbar -->
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 fixed-top">
         <div class="container">
           <a class="navbar-brand" href="../index.html">
             <img
               class="nav-logo"
               src="../img/elguia_logo.png"
-              alt="Logo elGuiaJavier"
-            />
-            elGuiaJavier</a
-          >
+              alt="Logo elGuiaJavier"/>elGuiaJavier</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -55,12 +52,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-end">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="../pages/tours.html"
-                  >Tours</a></li>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/tours.html"
+                  >Tours</a>
+              </li>
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="../pages/galeria.html"
-                >Galeria</a>
-                </li>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/galeria.html"
+                  >Galeria</a>
+              </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="../pages/sobreMi.html">Sobre mi</a>
               </li>
@@ -71,16 +75,151 @@
           </div>
         </div>
       </nav>
-</header>
+    </header>
 
-<main>
-       <!-- Seccion galeria de fotos -->
+    <main>
+      <!--seccion tarjetas -->
+      <section class="section-tours">
+        <div class="container">
+          <h1>Estos son mis mejores tours</h1>
+          <p>Es una seleccion de las meores experiencias que he logrado crear a
+            lo largo de mi estancia en Barcelona. Estaán pensados para brindarle
+            a los viajeros mas exigentes que buscan poder conocer Cataluña de
+            una forma diferente.</p>
+          <div class="grilla">
+            <!--Tarjeta 1-->
+            <div
+              class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column">
+              <img
+                src="../img/gotico.JPG"
+                class="card-img-top rounded-top"
+                alt="actividad 1"/>
+              <div class="card-body d-flex flex-column p-3 flex-grow-1">
+                <h5 class="card-title fw-bold fs-5">Barrio gótico</h5>
+                <p class="card-text mb-auto mt-3">
+                  Sus grandes hojas verdes y perforadas transforman la luz en
+                  calma visual, llenando el ambiente de frescura y equilibrio.</p>
+                <div class="d-flex flex-row justify-content-between align-items-end pt-3">
+                  <span><i class="bi bi-clock-fill"></i> 2,5 hs</span>
+                  <span><i class="bi bi-star-fill text-warning"></i> 4.5</span>
+                </div>
+              </div>
+            </div>
+            <!--Tarjeta 2-->
+            <div class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column">
+              <img
+                src="../img/tour2.JPG"
+                class="card-img-top rounded-top"
+                alt="actividad 1"/>
+              <div class="card-body d-flex flex-column p-3 flex-grow-1">
+                <h5 class="card-title fw-bold fs-5">Senderismo en Familia</h5>
+                <p class="card-text mb-auto mt-3">
+                  Escapada desde Barcelona hacia rutas naturales pensadas para
+                  todos. Descubre bosques, vistas panorámicas y aire puro. Una
+                  experiencia perfecta para disfrutar en familia sin
+                  complicaciones.</p>
+                <div class="d-flex flex-row justify-content-between align-items-end pt-3">
+                  <span><i class="bi bi-clock-fill"></i> 6,5 hs</span>
+                  <span><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                </div>
+              </div>
+          </div>
+          <!--Tarjeta 3-->
+            <div class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column">
+              <img
+                src="../img/tour3.JPG"
+                class="card-img-top rounded-top"
+                alt="actividad 1"/>
+              <div class="card-body d-flex flex-column p-3 flex-grow-1">
+                <h5 class="card-title fw-bold fs-5">Escalada en Roca</h5>
+                <p class="card-text mb-auto mt-3">
+                  Conquista los acantilados de Cataluña. Adrenalina, vistas panorámicas y seguridad garantizada. Para todos los niveles.</p>
+                <div class="d-flex flex-row justify-content-between align-items-end pt-3">
+                  <span><i class="bi bi-clock-fill"></i> 3,5 hs</span>
+                  <span><i class="bi bi-star-fill text-warning"></i> 4.7</span>
+                </div>
+              </div>
+            </div>
+          <!--Tarjeta 4-->
+            <div class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column">
+              <img
+                src="../img/tapas.JPG"
+                class="card-img-top rounded-top"
+                alt="actividad 1"/>
+              <div class="card-body d-flex flex-column p-3 flex-grow-1">
+                <h5 class="card-title fw-bold fs-5">Tapeo Gastronómico</h5>
+                <p class="card-text mb-auto mt-3">
+                  Recorre los bares más auténticos de Barcelona probando tapas tradicionales. Descubre sabores locales, vinos de la región y la verdadera esencia culinaria catalana. Una experiencia para los amantes de la buena comida.</p>
+                <div class="d-flex flex-row justify-content-between align-items-end pt-3">
+                  <span><i class="bi bi-clock-fill"></i> 1,5 hs</span>
+                  <span><i class="bi bi-star-fill text-warning"></i> 4,4</span>
+                </div>
+              </div>
+            </div>
+          <!--Tarjeta 5-->
+            <div class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column">
+              <img
+                src="../img/tour4.JPG"
+                class="card-img-top rounded-top"
+                alt="actividad 1"/>
+              <div class="card-body d-flex flex-column p-3 flex-grow-1">
+                <h5 class="card-title fw-bold fs-5">Barco por la Costa Brava</h5>
+                <p class="card-text mb-auto mt-3">
+                  Navega por las aguas turquesas de la Costa Brava, entre calas escondidas y acantilados. Disfruta del sol, el mar y paradas para bañarse en rincones únicos. Una escapada perfecta desde Barcelona para desconectar.</p>
+                <div class="d-flex flex-row justify-content-between align-items-end pt-3">
+                  <span><i class="bi bi-clock-fill"></i> 3,5 hs</span>
+                  <span><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                </div>
+              </div>
+            </div>
+          <!--Tarjeta 6-->
+            <div class="tarjeta shadow-sm border border border-secondary-subtle rounded d-flex flex-column">
+              <img
+                src="../img/santpau.JPG"
+                class="card-img-top rounded-top"
+                alt="actividad 1"/>
+              <div class="card-body d-flex flex-column p-3 flex-grow-1">
+                <h5 class="card-title fw-bold fs-5">Barcelona de Noche</h5>
+                <p class="card-text mb-auto mt-3">
+                  Explora la ciudad iluminada con sus monumentos más icónicos. Paseos por barrios vibrantes, vida nocturna y la magia de Barcelona después del atardecer. Una experiencia diferente bajo las luces de la ciudad.</p>
+                <div class="d-flex flex-row justify-content-between align-items-end pt-3">
+                  <span><i class="bi bi-clock-fill"></i> 2,5 hs</span>
+                  <span><i class="bi bi-star-fill text-warning"></i> 4.2</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
 
+<!-- Seccion video -->
 
+    <section class="section-video">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- texto -->
+                <div class="col-12 col-md-6">
+                    <h2>La sagrada Familia cumple años!</h2>
+                    <p>En el dia 19 de marzo de 1882, la Asociación Espiritual de Devotos de San Jose daba comienzo a la construcción del Templo Expiatorio de la Sagrada Familia, pero ¿Sabías estas curiosidades?.<br> Es mi opera prima, tras mucho tiempo pensandolo con motivo del 142 aniversario del inicio de las obras de Sagrada Familia y aquí está. Espero que os guste y le deis mucho amor</p>
+                </div>
+                <!-- Video -->
+                <div class="col-12 col-md-6">
+                    <div class="video">
+                        <iframe
+                            src="https://www.youtube.com/embed/iB_htkixePk"
+                            title="La sagrada Familia cumple años!"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
-</main>
-      <!-- footer-->
+    </main>
+    <!-- footer-->
 
     <footer class="footer text-white pt-5 pb-4">
       <div class="container">
@@ -93,18 +232,20 @@
               </h4>
               <p class="text-secondary mb-0">
                 Suscríbete para recibir mis mejores tips y te enviaré gratis mi
-                <span class="text-light fw-bold">Guía Completa en PDF</span> con recomendaciones que no
-                salen en los mapas.
+                <span class="text-light fw-bold">Guía Completa en PDF</span> con
+                recomendaciones que no salen en los mapas.
               </p>
               <div class="pt-5 d-flex flex-column gap-2 align-items-start">
                 <form
-                  class="d-flex flex-column flex-sm-row gap-2 align-items-start">
+                  class="d-flex flex-column flex-sm-row gap-2 align-items-start"
+                >
                   <div class="">
                     <input
                       type="email"
                       class="form-control border-secondary text-dark"
                       placeholder="Tu email..."
-                      aria-label="Email"/>
+                      aria-label="Email"
+                    />
                   </div>
                   <button class="btn btn-sm">Enviar PDF</button>
                 </form>
@@ -113,11 +254,15 @@
                     class="form-check"
                     type="checkbox"
                     id="privacyCheck"
-                    required/>
+                    required
+                  />
                   <label class="text-secondary small" for="privacyCheck">
                     Acepto la
-                    <a href="privacidad.html"
-                      class="text-white text-decoration-underline">política de privacidad</a>
+                    <a
+                      href="privacidad.html"
+                      class="text-white text-decoration-underline"
+                      >política de privacidad</a
+                    >
                   </label>
                 </div>
               </div>
@@ -126,24 +271,42 @@
 
             <div class="col-lg-5 offset-lg-2">
               <div class="text-start text-lg-end">
-                <h6 class="fw-bold fs-5 mb-4  text-uppercase small">Explora</h6>
-                <ul class="list-unstyled ">
+                <h6 class="fw-bold fs-5 mb-4 text-uppercase small">Explora</h6>
+                <ul class="list-unstyled">
                   <li class="mb-2">
-                    <a href="../pages/tours.html" class="footer-link">Nuestros Tours</a></li>
+                    <a href="../pages/tours.html" class="footer-link"
+                      >Nuestros Tours</a
+                    >
+                  </li>
                   <li class="mb-2">
-                    <a href="contacto.html" class="footer-link">Contacto Directo</a></li>
+                    <a href="contacto.html" class="footer-link"
+                      >Contacto Directo</a
+                    >
+                  </li>
                   <li class="mb-2">
-                    <a href="../pages/sobreMi.html" class="footer-link">Sobre Javi</a></li>
+                    <a href="../pages/sobreMi.html" class="footer-link"
+                      >Sobre Javi</a
+                    >
+                  </li>
                 </ul>
                 <!-- footer redes Sociales -->
 
                 <div class="text-start text-lg-end pt-4">
                   <h6 class="fw-bold fs-5 mb-3 text-uppercase small">
-                    Sígueme en redes</h6>
-                  <div class="d-flex gap-2 align-items-center justify-content-lg-end">
-                    <a href="#" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram fs-3"></i></a>
-                    <a href="#" class="footer-social" aria-label="YouTube"><i class="bi bi-youtube fs-2"></i></a>
-                    <a href="#" class="footer-social" aria-label="TikTok"><i class="bi bi-tiktok fs-3"></i></a>
+                    Sígueme en redes
+                  </h6>
+                  <div
+                    class="d-flex gap-2 align-items-center justify-content-lg-end"
+                  >
+                    <a href="#" class="footer-social" aria-label="Instagram"
+                      ><i class="bi bi-instagram fs-3"></i
+                    ></a>
+                    <a href="#" class="footer-social" aria-label="YouTube"
+                      ><i class="bi bi-youtube fs-2"></i
+                    ></a>
+                    <a href="#" class="footer-social" aria-label="TikTok"
+                      ><i class="bi bi-tiktok fs-3"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -152,17 +315,17 @@
         </div>
       </div>
 
-        <!-- Parte inferior -->
+      <!-- Parte inferior -->
 
-        <div class="footer-bottom p-4 mt-2 border-top border-secondary d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
-        >
-          <p class="small text-secondary mb-0">
-            © 2026 elGuiaJavier. Todos los derechos reservados.
-          </p>
-          <div class="d-flex gap-4">
-            <a href="#" class="footer-link small">Privacidad</a>
-            <a href="#" class="footer-link small">Cookies</a>
-          </div>
+      <div
+        class="footer-bottom p-4 mt-2 border-top border-secondary d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+      >
+        <p class="small text-secondary mb-0">
+          © 2026 elGuiaJavier. Todos los derechos reservados.
+        </p>
+        <div class="d-flex gap-4">
+          <a href="#" class="footer-link small">Privacidad</a>
+          <a href="#" class="footer-link small">Cookies</a>
         </div>
       </div>
     </footer>
@@ -172,5 +335,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
   </body>
+</html>

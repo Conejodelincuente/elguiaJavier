@@ -1,8 +1,6 @@
 /*--Galleria de fotos--*/
 
 .section-galeria {
-    padding: 1rem;
-    padding-top: 2rem;
     background-color: $color-bg-2;
     h1 {
         font-size: 2.25rem;
@@ -21,8 +19,8 @@
         grid-template-columns: 1fr;
         gap: 0.5rem;
 
-        @media (min-width: 480px) {
-        grid-template-columns: repeat(3, 1fr);
+        @media (min-width: 780px) {
+        grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
         }
 
@@ -40,6 +38,7 @@
                 width: 100%;
                 height: 13rem;
                 object-fit: cover;
+                object-position: center;
                 display: block;
             }
 
@@ -47,43 +46,6 @@
     }
 }
 
-/*--Video--*/
 
-.section-video{
-    padding: 4rem 0;
-    background-color: $color-bg-1;
-    h2{
-        font-size: 2.25rem;
-
-        @media (max-width: 768px){
-        font-size: 1.8rem;
-        text-align: center;
-        }
-    }
-    p{
-        padding-top: 1rem;
-        font-size: 0.9rem;
-        margin-bottom: 3rem;
-        color: #666;
-        @media (max-width: 768px) {
-        text-align: center;
-        }
-    }
-
-    .video{
-        position: relative;
-        width: 100%;
-        padding-top: 56.25%;
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-        }
-    }
-}
 
 
