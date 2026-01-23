@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +38,7 @@ a:hover {
 /*--Video--*/
 .section-video {
   padding: 4rem 0;
-  background-color: #e4e4e4;
+  background-color: #ffffff;
 }
 .section-video h2 {
   font-size: 2.25rem;
@@ -209,6 +213,14 @@ a:hover {
 }
 
 /* guias de barcelona */
+.guias .btn {
+  width: 25%;
+}
+@media (min-width: 768px) {
+  .guias .btn {
+    width: 100%;
+  }
+}
 .guias a {
   display: block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -254,6 +266,42 @@ a:hover {
   background-color: #ff7c0a;
   font-size: 1.5rem;
   flex-shrink: 0;
+}
+
+/* contacto */
+.section-contacto {
+  padding: 3rem 0;
+  background-color: rgba(245, 236, 221, 0.8196078431);
+  color: #1a1a1a;
+}
+.section-contacto h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.section-contacto p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.section-contacto .tarjeta-contacto {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 576px) {
+  .section-contacto .tarjeta-contacto {
+    padding: 1.5rem;
+  }
+}
+.section-contacto .form-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+.section-contacto .form-select {
+  border-radius: 0.8rem;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.9rem;
 }
 
 .section-tours {
@@ -433,6 +481,7 @@ a:hover {
   background-color: rgba(245, 236, 221, 0.8196078431);
 }
 .section-galeria h1 {
+  padding-top: 3rem;
   font-size: 2.25rem;
 }
 @media (max-width: 768px) {
@@ -447,7 +496,7 @@ a:hover {
 }
 .section-galeria .galeria {
   display: grid;
-  margin: 0.5rem;
+  padding-bottom: 3rem;
   grid-template-columns: 1fr;
   gap: 0.5rem;
 }

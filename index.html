@@ -67,7 +67,7 @@
                 <a class="nav-link" href="./pages/sobreMi.html">Sobre mi</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="index.html">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -87,9 +87,9 @@
                 verdadera esencia de mi ciudad adoptiva a través de rutas
                 auténticas y personalizadas.
               </p>
-              <button class="btn mt-3 btn-outline-secondary d-inline p-2">
+              <a href="./pages/tours.html" class="btn mt-3 btn-outline-secondary d-inline p-2">
                 Conoce mis Tours
-              </button>
+              </a>
             </article>
             <div class="hero-img-col col-lg-7 col-md-6 order-1 order-md-2">
               <div class="hero-img"></div>
@@ -127,7 +127,7 @@
           <h2>Las mejores actividades</h2>
           <a
             class="text-decoration-none text-body fst-italic fs-6"
-            href="index.html"
+            href="./pages/tours.html"
             >Ver todos</a
           >
         </div>
@@ -248,17 +248,16 @@
     <!-- Seccion guias -->
     <section class="guias py-4">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <h2 class="fw-bold">Guias escenciales en Barcelona</h2>
-          <a
-            class="btn btn-outline-dark rounded-pill px-4 py-1 px-md-4 py-md-2 fs-6 fs-md-5"
-            href="#"
-          >
-            ver todas</a
-          >
+        <div class="row mb-4">
+          <div class="col-md-9">
+            <h2 class="fw-bold">Guias escenciales en Barcelona</h2>
+          </div>
+          <div class="col-md-3">
+            <a href="./pages/galeria.html" class="btn btn-outline-dark rounded-pill px-4 py-1 px-md-4 py-md-2 fs-6 fs-md-5" >ver todas</a>
+          </div>
         </div>
+<!-- Columna izquierda -->
         <div class="row g-4">
-          <!-- Columna izquierda -->
           <div class="col-lg-7">
             <a href="#" class="text-decoration-none text-dark">
               <article class="guia-destacada">
@@ -406,7 +405,7 @@
             <div class="d-flex gap-2 mb-3">
               <!-- Cliente 3 -->
               <div
-                class="avatar text-white text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3"
+                class="avatar text-white text-white rounded-circle d-flex align-items-center          justify-content-center fw-bold me-3"
               >
                 M
               </div>
@@ -425,6 +424,94 @@
         </div>
       </div>
     </section>
+
+<!--//// contacto ////-->
+
+<section class="section-contacto" id="contacto">
+  <div class="container">
+    <div class="row align-items-start py-4">
+<!-- columna izquierda -->
+      <div class="columna-izquierda col-12 col-md-5">
+        <h2>Quieres vivir Barcelona de una manera diferente?</h2>
+        <p>Se parte de esta nueva experiencia, ponte en contacto conmigo para que podamos conocernos</p>
+        <div class="row mt-4">
+          <div class="col-md-12 col-lg-6">
+            <h4 class="fw-bold">Email</h4>
+            <a class="fw-bold" href="mailto:#">Javi@elguiaJavier.com</a>
+            <p class="text-muted py-3"> Envianos un correo y responderemos a la brevedad.</p>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <h4 class="fw-bold">Móvil</h4>
+            <p class="fw-bold">+34 658-4578</p>
+            <p class="text-muted">Horarios de atención Lunes a sabado de 9:00 hs a 20:00 hs</p>
+          </div>
+        </div>
+      </div>
+<!-- columna derecha -->
+      <div class="columna-derecha col-12 col-md-7">
+        <div class="tarjeta-contacto p-4 bg-body-tertiary rounded-4">
+          <form class="container">
+            <div class="row g-3">
+              <div class="col-md-6">
+                  <h5>Nombre</h5>
+                  <input type="text" class="form-control" placeholder=" Javi">
+              </div>
+              <div class="col-md-6">
+                  <h5>Apellido</h5>
+                  <input type="text" class="form-control" placeholder="Elguia">
+              </div>
+              <div class="col-12">
+                  <h5>Email</h5>
+                  <input type="email" class="form-control" placeholder="Tumail@mail.com">
+              </div>
+              <div class="col-6">
+                <label class="form-label">Que tour quieren hacer? *</label>
+                <select class="form-select"  required>
+                  <option value="disabled" selected disabled>Elige un Tour</option>
+                  <option value="gotico">Barrio gótico</option>
+                  <option value="tapas">Ruta de tapas</option>
+                  <option value="sagrada">Sagrada familia</option>
+                  <option value="barco">Paseo en barco</option>
+                  <option value="personalizado">Personalizado</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                    <label class="form-label">Número de personas *</label>
+                    <select class="form-select" required>
+                        <option value="" selected disabled>¿Cuántos son?</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                        <option value="7+">7 o más personas</option>
+                    </select>
+                </div>
+              <div class="col-12">
+                  <label class="form-label">Quieres comentarnos algo ?</label>
+                  <textarea Class="form-control" rows="4" placeholder="Mensaje..."></textarea>
+              </div>
+              <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                        <label class="form-check-label text-muted" for="privacy">
+                        Acepto la Política de Privacidad
+                        </label>
+                    </div>
+                </div>
+              <div class="col-12 mt-4">
+                  <a type="submit" class="btn btn-outline-dark w-50 py-3 rounded-pill">Enviar</a>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--//// footer ////-->
 
     <footer class="footer text-white pt-5 pb-4">
       <div class="container">
@@ -475,7 +562,7 @@
                   <li class="mb-2">
                     <a href="./pages/tours.html" class="footer-link">Nuestros Tours</a></li>
                   <li class="mb-2">
-                    <a href="contacto.html" class="footer-link">Contacto Directo</a></li>
+                    <a href="../index.html#contacto" class="footer-link">Contacto Directo</a></li>
                   <li class="mb-2">
                     <a href="./pages/sobreMi.html" class="footer-link">Sobre Javi</a></li>
                 </ul>
